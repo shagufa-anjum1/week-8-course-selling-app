@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const ObjectId = mongoose.Types.ObjectId;
 
 const userSchema = new Schema({
-  _id: ObjectId,
+ 
   email: {
     type: String,
     unique: true
@@ -18,7 +18,7 @@ const userSchema = new Schema({
 
 
 const adminSchema = new Schema({
-  _id: ObjectId,
+  
   password: String,
   email: String,
   firstName: String,
@@ -27,7 +27,7 @@ const adminSchema = new Schema({
 
 
 const courseSchema = new Schema({
-  _id: ObjectId,
+  
  title: String,
  description: String,
  price: Number,
@@ -36,7 +36,7 @@ const courseSchema = new Schema({
 })
 
 const purchasesSchema =new Schema({
-  _id: ObjectId,
+  
   courseId: ObjectId,
   userId: ObjectId
 })
